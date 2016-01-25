@@ -3,3 +3,4 @@
 - ```MultiGPU_Test2.cu```: Depth-first   - synchronous copy;
 - ```MultiGPU_Test3.cu```: Depth-first   - asynchronous copy with streams;
 - ```MultiGPU_Test4.cu```: Depth-first   - asynchronous copy no   streams;
+- ```MultiGPU_Test5.cu```: Depth-first   - asynchronous copy no   streams unique host vector;
