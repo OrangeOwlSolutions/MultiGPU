@@ -56,8 +56,6 @@ int main() {
 		gpuErrchk(cudaMemcpy(inputMatrices + k * NperGPU, plan[k].d_data, NperGPU * sizeof(double), cudaMemcpyDeviceToHost));
 	}
 
-	saveCPUrealtxt(inputMatrices, "/home/angelo/cuda-workspace/MemoryTransferMultiGPU/Release/inputMatrices.txt", N);
-
 	gpuErrchk(cudaDeviceReset());
 }
 
