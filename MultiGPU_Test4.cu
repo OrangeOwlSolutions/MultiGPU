@@ -49,7 +49,6 @@ int main() {
     for (int k = 0; k < numGPUs; k++) createPlan(plan[k], NperGPU, k);
 
     // --- "Depth-first" approach - no stream
-    double *inputMatrices;   gpuErrchk(cudaMallocHost(&inputMatrices, N * sizeof(double)));
     for (int k = 0; k < numGPUs; k++)
     {
       	gpuErrchk(cudaSetDevice(k));
