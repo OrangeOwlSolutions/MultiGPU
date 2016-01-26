@@ -1,4 +1,5 @@
 # MultiGPU
+See [Concurrency in CUDA multi-GPU executions](http://stackoverflow.com/questions/11673154/concurrency-in-cuda-multi-gpu-executions/35010019#35010019).
 - ```MultiGPU_Test1.cu```: Breadth-first - synchronous copy;
 - ```MultiGPU_Test2.cu```: Depth-first   - synchronous copy;
 - ```MultiGPU_Test3.cu```: Depth-first   - asynchronous copy with streams;
